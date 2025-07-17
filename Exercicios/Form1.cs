@@ -27,16 +27,18 @@ namespace Exercicios
                 txtProduto.Clear();
 
             }
-            else if (txtCompra.Text.Trim() == string.Empty)
+            else if (!int.TryParse(txtCompra.Text.Trim(), out
+                _))
             {
-                MessageBox.Show("Preencher o campo VALOR DA COMPRA");
+                MessageBox.Show("Preencher o campo VALOR DA COMPRA, apenas números");
 
                 txtCompra.Focus();
                 txtCompra.Clear();
             }
-            else if (txtVenda.Text.Trim() == string.Empty)
+            else if (!int.TryParse(txtVenda.Text.Trim(), out
+                _))
             {
-                MessageBox.Show("Preencher o campo VALOR DA VENDA");
+                MessageBox.Show("Preencher o campo VALOR DA VENDA, apenas números");
 
                 txtVenda.Focus();
                 txtVenda.Clear();
