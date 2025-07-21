@@ -27,15 +27,17 @@ namespace Exercicios
                 txtProduto.Clear();
 
             }
-            else if (!int.TryParse(txtCompra.Text.Trim(), out
-                _))
+            else if (!
+                decimal.TryParse(txtCompra.Text.Trim(), System.Globalization.NumberStyles.Any, new System.Globalization.CultureInfo("pt-BR"), out
+             _))
             {
                 MessageBox.Show("Preencher o campo VALOR DA COMPRA, apenas números");
 
                 txtCompra.Focus();
                 txtCompra.Clear();
             }
-            else if (!int.TryParse(txtVenda.Text.Trim(), out
+            else if (!
+                decimal.TryParse(txtVenda.Text.Trim(), System.Globalization.NumberStyles.Any, new System.Globalization.CultureInfo("pt-BR"), out
                 _))
             {
                 MessageBox.Show("Preencher o campo VALOR DA VENDA, apenas números");
@@ -53,7 +55,8 @@ namespace Exercicios
             }
             else
             {
-                string produto, compra, venda, descricao;
+                string produto, compra, venda, descricao, valor;
+
                 produto = txtProduto.Text;
                 compra = txtCompra.Text;
                 venda = txtVenda.Text;
