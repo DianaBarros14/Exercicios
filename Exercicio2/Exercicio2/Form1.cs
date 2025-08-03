@@ -69,7 +69,7 @@ namespace Exercicio2
                 tecnico = txtTecnico.Text;
                 capitao = txtCapitao.Text;
 
-                MessageBox.Show("Nome do jogador 1: " + jogador1 + "\nNome do jogador 2: " + jogador2 + "\nNome do jogador 3: " + jogador3 + "\nNome do técnico: " + tecnico + "\nNome do capitão: " + capitao);
+                MessageBox.Show("Nome do jogador 1: " + jogador1 + "\nNome do jogador 2: " + jogador2 + "\nNome do jogador 3: " + jogador3 + "\nNome do técnico: " + tecnico + "\n-----------------------------------" + "\nNome do capitão: " + capitao);
             }
         }
     }

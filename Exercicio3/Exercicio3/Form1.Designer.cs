@@ -63,13 +63,13 @@
             this.txtObs.Location = new System.Drawing.Point(271, 256);
             this.txtObs.Multiline = true;
             this.txtObs.Name = "txtObs";
-            this.txtObs.Size = new System.Drawing.Size(408, 30);
+            this.txtObs.Size = new System.Drawing.Size(408, 64);
             this.txtObs.TabIndex = 4;
             // 
             // btnMostrar
             // 
             this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrar.Location = new System.Drawing.Point(411, 316);
+            this.btnMostrar.Location = new System.Drawing.Point(417, 335);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(131, 44);
             this.btnMostrar.TabIndex = 5;
@@ -131,17 +131,21 @@
             // 
             this.mtbCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mtbCnpj.Location = new System.Drawing.Point(270, 170);
+            this.mtbCnpj.Mask = "00.000.000/0000-00";
             this.mtbCnpj.Name = "mtbCnpj";
             this.mtbCnpj.Size = new System.Drawing.Size(408, 30);
             this.mtbCnpj.TabIndex = 11;
+            this.mtbCnpj.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // mtbTel
             // 
             this.mtbTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mtbTel.Location = new System.Drawing.Point(271, 214);
+            this.mtbTel.Mask = "(00)00000-0000";
             this.mtbTel.Name = "mtbTel";
             this.mtbTel.Size = new System.Drawing.Size(408, 30);
             this.mtbTel.TabIndex = 12;
+            this.mtbTel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // Form1
             // 
