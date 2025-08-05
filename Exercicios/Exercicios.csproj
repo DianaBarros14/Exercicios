@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,6 +68,36 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOperador2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador2.Designer.cs">
+      <DependentUpon>frmOperador2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador3.Designer.cs">
+      <DependentUpon>frmOperador3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador4.Designer.cs">
+      <DependentUpon>frmOperador4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador5.Designer.cs">
+      <DependentUpon>frmOperador5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador6.Designer.cs">
+      <DependentUpon>frmOperador6.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -75,6 +109,21 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador2.resx">
+      <DependentUpon>frmOperador2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador3.resx">
+      <DependentUpon>frmOperador3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador4.resx">
+      <DependentUpon>frmOperador4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador5.resx">
+      <DependentUpon>frmOperador5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador6.resx">
+      <DependentUpon>frmOperador6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -83,6 +132,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +146,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magro.png.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imagens\magro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagens\peso_ideal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagens\muito_obeso.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imagens\obeso.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
